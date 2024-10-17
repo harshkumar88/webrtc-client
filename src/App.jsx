@@ -10,9 +10,7 @@ const configuration = {
   ],
   iceCandidatePoolSize: 10,
 };
-const socket = io("https://webrtc-backend-dc2l.onrender.com", {
-  withCredentials: true, // Allow credentials (if your server allows them)
-});
+const socket = io("https://webrtc-backend-dc2l.onrender.com");
 let pc;
 let localStream;
 let startButton;
