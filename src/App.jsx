@@ -10,7 +10,10 @@ const configuration = {
   ],
   iceCandidatePoolSize: 10,
 };
-const socket = io("http://localhost:3000", { transports: ["websocket"] });
+const socket = io(
+  ["http://localhost:3000", "https://webrtc-backend-dc2l.onrender.com"],
+  { transports: ["websocket"] }
+);
 
 let pc;
 let localStream;
